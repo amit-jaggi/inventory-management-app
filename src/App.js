@@ -5,6 +5,9 @@ import InventoryDashboard from './components/InventoryDashboard';
 import { fetchInitialData } from './redux/actions/fetchAction';
 
 function App() {
+  const title = document.querySelector('title');
+  title.innerText = `Inventory Management App`;
+
   const dispatch = useDispatch();
 
   useEffect(() => {
