@@ -245,7 +245,7 @@ const EditDialog = ({ open, handleClose, data }) => {
 							}}
 						>Value&nbsp;{
 								Number(value) !== Number(price) * Number(quantity)
-									? (<Tooltip title="Incorrect Value based on the price & quantity.">
+									? (<Tooltip title={`Incorrect Value provided based on the price & quantity. Expected Result: ${Number(price) * Number(quantity)}`}>
 										<InfoOutlined fontSize="small" sx={{ color: 'red', fontSize: '12px', cursor: 'pointer' }} />
 									</Tooltip>)
 									: ('')
